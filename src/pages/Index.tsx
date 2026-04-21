@@ -158,14 +158,14 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-6 py-8 flex items-end justify-between">
           <div>
             <p className="text-xs font-montserrat tracking-[0.3em] text-muted-foreground uppercase mb-2">
-              Ресторан
+              Бильярдный клуб
             </p>
             <h1 className="font-cormorant text-5xl font-light text-foreground leading-none">
-              Меню
+              7 Луза
             </h1>
           </div>
           <p className="font-cormorant text-lg italic text-muted-foreground hidden md:block">
-            Сезонная кухня · Локальные продукты
+            Меню · Бар · Кухня
           </p>
         </div>
       </header>
