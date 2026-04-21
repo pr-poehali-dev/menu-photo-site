@@ -175,9 +175,20 @@ export default function Index() {
               7 Луза
             </h1>
           </div>
-          <p className="font-cormorant text-lg italic text-muted-foreground hidden md:block">
-            Меню · Бар · Кухня
-          </p>
+          <div className="text-right hidden md:block">
+            <p className="font-cormorant text-lg italic text-muted-foreground">
+              Меню · Бар · Кухня
+            </p>
+            <p className="text-xs tracking-wider text-muted-foreground mt-2">
+              ТЦ «Южный»
+            </p>
+            <a
+              href="tel:89195331636"
+              className="text-xs tracking-wider text-foreground hover:text-muted-foreground transition-colors"
+            >
+              8 (919) 533-16-36
+            </a>
+          </div>
         </div>
       </header>
 
