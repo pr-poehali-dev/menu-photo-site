@@ -1,9 +1,17 @@
 import { useState } from "react";
 
-const APPETIZER_IMG = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/d5b9651d-d7ab-4343-b782-d98187a7989c.jpg";
-const MAIN_IMG = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/63cdb813-6831-4ef5-bcb6-1a4a1c3f341a.jpg";
-const DESSERT_IMG = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/8b7660e9-00fc-41ac-bce7-4c6f8498fd70.jpg";
-const DRINK_IMG = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/053e9791-db92-4253-8fb3-bf5480d8f34d.jpg";
+const IMG_SALAD = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/f9b43d09-ce1d-4a66-bb3a-ce6efa47e97d.jpg";
+const IMG_MAINS = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/01a28685-65a4-4678-8535-faed92e44134.jpg";
+const IMG_BBQ = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/6c24ec46-714d-4791-995f-658823f638ca.jpg";
+const IMG_SANDWICH = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/9ebac804-1d6e-4996-b488-dd111d218494.jpg";
+const IMG_SIDES = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/d8b2cc8a-e593-43bd-a54b-05c78b33d10d.jpg";
+const IMG_COLD = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/0d7b15fe-419d-42b6-8196-03a0c7ea34b0.jpg";
+const IMG_DESSERT = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/a204c1b2-a3d0-4360-973b-e707d85416c5.jpg";
+const IMG_TEA = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/774e9c62-c04d-4c58-9894-7942425c5cdb.jpg";
+const IMG_BEER_SNACKS = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/cbbab8cf-6c7b-4422-a3c7-6d6ee83ff00e.jpg";
+const IMG_BEER = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/45809b9c-a8aa-4318-9813-a9757a994fd6.jpg";
+const IMG_SOFT = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/2de0c814-aaa3-49ad-8c43-b66133177a7e.jpg";
+const IMG_COFFEE = "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/files/035f3614-5a5f-47f1-967e-8664fe059e45.jpg";
 
 type Category =
   | "all"
@@ -31,96 +39,96 @@ interface Dish {
 
 const dishes: Dish[] = [
   // Салаты
-  { id: 1, name: "Оливье", price: "250 ₽", category: "salads", image: APPETIZER_IMG },
-  { id: 2, name: "Винегрет", price: "250 ₽", category: "salads", image: APPETIZER_IMG },
+  { id: 1, name: "Оливье", price: "250 ₽", category: "salads", image: IMG_SALAD },
+  { id: 2, name: "Винегрет", price: "250 ₽", category: "salads", image: IMG_SALAD },
 
   // Вторые блюда
-  { id: 10, name: "Мясо по-французски", price: "350 / 500 ₽", category: "mains", image: MAIN_IMG },
-  { id: 11, name: "Пельмени с бульоном", price: "250 ₽", category: "mains", image: MAIN_IMG },
-  { id: 12, name: "Пельмени", price: "200 ₽", category: "mains", image: MAIN_IMG },
-  { id: 13, name: "Колбаски", price: "300 ₽", category: "mains", image: MAIN_IMG },
+  { id: 10, name: "Мясо по-французски", price: "350 / 500 ₽", category: "mains", image: IMG_MAINS },
+  { id: 11, name: "Пельмени с бульоном", price: "250 ₽", category: "mains", image: IMG_MAINS },
+  { id: 12, name: "Пельмени", price: "200 ₽", category: "mains", image: IMG_MAINS },
+  { id: 13, name: "Колбаски", price: "300 ₽", category: "mains", image: IMG_MAINS },
 
   // Шашлык
-  { id: 20, name: "Свинина", price: "450 ₽", category: "bbq", image: MAIN_IMG },
-  { id: 21, name: "Крылышки", price: "400 ₽", category: "bbq", image: MAIN_IMG },
-  { id: 22, name: "Люля-кебаб", price: "550 ₽", category: "bbq", image: MAIN_IMG },
+  { id: 20, name: "Свинина", price: "450 ₽", category: "bbq", image: IMG_BBQ },
+  { id: 21, name: "Крылышки", price: "400 ₽", category: "bbq", image: IMG_BBQ },
+  { id: 22, name: "Люля-кебаб", price: "550 ₽", category: "bbq", image: IMG_BBQ },
 
   // Бутерброды
-  { id: 30, name: "С ветчиной", price: "200 ₽ / шт", category: "sandwiches", image: APPETIZER_IMG },
-  { id: 31, name: "С колбасой", price: "200 ₽ / шт", category: "sandwiches", image: APPETIZER_IMG },
-  { id: 32, name: "Соус сырный", price: "100 ₽ / шт", category: "sandwiches", image: APPETIZER_IMG },
-  { id: 33, name: "Соус чесночный", price: "100 ₽ / шт", category: "sandwiches", image: APPETIZER_IMG },
+  { id: 30, name: "С ветчиной", price: "200 ₽ / шт", category: "sandwiches", image: IMG_SANDWICH },
+  { id: 31, name: "С колбасой", price: "200 ₽ / шт", category: "sandwiches", image: IMG_SANDWICH },
+  { id: 32, name: "Соус сырный", price: "100 ₽ / шт", category: "sandwiches", image: IMG_SANDWICH },
+  { id: 33, name: "Соус чесночный", price: "100 ₽ / шт", category: "sandwiches", image: IMG_SANDWICH },
 
   // Гарниры
-  { id: 40, name: "Картофель фри", price: "250 ₽", category: "sides", image: MAIN_IMG, weight: "150 г" },
-  { id: 41, name: "Фри в шарах", price: "300 ₽", category: "sides", image: MAIN_IMG, weight: "150 г" },
+  { id: 40, name: "Картофель фри", price: "250 ₽", category: "sides", image: IMG_SIDES, weight: "150 г" },
+  { id: 41, name: "Фри в шарах", price: "300 ₽", category: "sides", image: IMG_SIDES, weight: "150 г" },
 
   // Холодные закуски
-  { id: 50, name: "Мясное ассорти", price: "450 ₽", category: "cold", image: APPETIZER_IMG },
-  { id: 51, name: "Овощное ассорти", price: "350 ₽", category: "cold", image: APPETIZER_IMG },
-  { id: 52, name: "Разносолы", price: "350 ₽", category: "cold", image: APPETIZER_IMG },
-  { id: 53, name: "Капуста «Сибирская»", price: "250 ₽", category: "cold", image: APPETIZER_IMG },
-  { id: 54, name: "Лимон (нарезка)", price: "100 ₽", category: "cold", image: APPETIZER_IMG },
-  { id: 55, name: "Сельдь с отварным картофелем", price: "400 ₽", category: "cold", image: APPETIZER_IMG },
+  { id: 50, name: "Мясное ассорти", price: "450 ₽", category: "cold", image: IMG_COLD },
+  { id: 51, name: "Овощное ассорти", price: "350 ₽", category: "cold", image: IMG_COLD },
+  { id: 52, name: "Разносолы", price: "350 ₽", category: "cold", image: IMG_COLD },
+  { id: 53, name: "Капуста «Сибирская»", price: "250 ₽", category: "cold", image: IMG_COLD },
+  { id: 54, name: "Лимон (нарезка)", price: "100 ₽", category: "cold", image: IMG_COLD },
+  { id: 55, name: "Сельдь с отварным картофелем", price: "400 ₽", category: "cold", image: IMG_COLD },
 
   // Десерты
-  { id: 60, name: "Яблоко", price: "100 ₽", category: "desserts", image: DESSERT_IMG, weight: "100 г" },
-  { id: 61, name: "Груша", price: "150 ₽", category: "desserts", image: DESSERT_IMG, weight: "100 г" },
-  { id: 62, name: "Апельсин", price: "100 ₽", category: "desserts", image: DESSERT_IMG, weight: "100 г" },
-  { id: 63, name: "Мандарин", price: "100 ₽", category: "desserts", image: DESSERT_IMG, weight: "100 г" },
-  { id: 64, name: "Виноград", price: "150 ₽", category: "desserts", image: DESSERT_IMG, weight: "100 г" },
-  { id: 65, name: "Банан", price: "100 ₽", category: "desserts", image: DESSERT_IMG, weight: "100 г" },
+  { id: 60, name: "Яблоко", price: "100 ₽", category: "desserts", image: IMG_DESSERT, weight: "100 г" },
+  { id: 61, name: "Груша", price: "150 ₽", category: "desserts", image: IMG_DESSERT, weight: "100 г" },
+  { id: 62, name: "Апельсин", price: "100 ₽", category: "desserts", image: IMG_DESSERT, weight: "100 г" },
+  { id: 63, name: "Мандарин", price: "100 ₽", category: "desserts", image: IMG_DESSERT, weight: "100 г" },
+  { id: 64, name: "Виноград", price: "150 ₽", category: "desserts", image: IMG_DESSERT, weight: "100 г" },
+  { id: 65, name: "Банан", price: "100 ₽", category: "desserts", image: IMG_DESSERT, weight: "100 г" },
 
   // К чаю
-  { id: 70, name: "Блинчики", price: "200 ₽", category: "tea", image: DESSERT_IMG, weight: "3 шт" },
-  { id: 71, name: "Сгущёнка", price: "100 ₽", category: "tea", image: DESSERT_IMG },
-  { id: 72, name: "Мёд", price: "100 ₽", category: "tea", image: DESSERT_IMG },
-  { id: 73, name: "Джем", price: "100 ₽", category: "tea", image: DESSERT_IMG },
-  { id: 74, name: "Сметана", price: "100 ₽", category: "tea", image: DESSERT_IMG },
-  { id: 75, name: "Шоколад плиточный", price: "250 ₽", category: "tea", image: DESSERT_IMG },
-  { id: 76, name: "Сникерс", price: "150 / 250 ₽", category: "tea", image: DESSERT_IMG },
-  { id: 77, name: "Марс", price: "150 / 250 ₽", category: "tea", image: DESSERT_IMG },
-  { id: 78, name: "Баунти", price: "150 / 250 ₽", category: "tea", image: DESSERT_IMG },
-  { id: 79, name: "Твикс", price: "150 / 250 ₽", category: "tea", image: DESSERT_IMG },
+  { id: 70, name: "Блинчики", price: "200 ₽", category: "tea", image: IMG_TEA, weight: "3 шт" },
+  { id: 71, name: "Сгущёнка", price: "100 ₽", category: "tea", image: IMG_TEA },
+  { id: 72, name: "Мёд", price: "100 ₽", category: "tea", image: IMG_TEA },
+  { id: 73, name: "Джем", price: "100 ₽", category: "tea", image: IMG_TEA },
+  { id: 74, name: "Сметана", price: "100 ₽", category: "tea", image: IMG_TEA },
+  { id: 75, name: "Шоколад плиточный", price: "250 ₽", category: "tea", image: IMG_TEA },
+  { id: 76, name: "Сникерс", price: "150 / 250 ₽", category: "tea", image: IMG_TEA },
+  { id: 77, name: "Марс", price: "150 / 250 ₽", category: "tea", image: IMG_TEA },
+  { id: 78, name: "Баунти", price: "150 / 250 ₽", category: "tea", image: IMG_TEA },
+  { id: 79, name: "Твикс", price: "150 / 250 ₽", category: "tea", image: IMG_TEA },
 
   // К пиву
-  { id: 80, name: "Арахис", price: "200 ₽", category: "beer_snacks", image: DRINK_IMG, weight: "100 г" },
-  { id: 81, name: "Кириешки", price: "200 ₽", category: "beer_snacks", image: DRINK_IMG, weight: "100 г" },
-  { id: 82, name: "Рыба", price: "400 ₽", category: "beer_snacks", image: DRINK_IMG, weight: "100 г" },
-  { id: 83, name: "Кальмар", price: "400 ₽", category: "beer_snacks", image: DRINK_IMG, weight: "100 г" },
-  { id: 84, name: "Сыр (косичка)", price: "400 ₽", category: "beer_snacks", image: DRINK_IMG, weight: "100 г" },
-  { id: 85, name: "Сыр (хворост)", price: "400 ₽", category: "beer_snacks", image: DRINK_IMG, weight: "100 г" },
-  { id: 86, name: "Пивная тарелка", price: "1 500 ₽", category: "beer_snacks", image: DRINK_IMG, weight: "500 г" },
+  { id: 80, name: "Арахис", price: "200 ₽", category: "beer_snacks", image: IMG_BEER_SNACKS, weight: "100 г" },
+  { id: 81, name: "Кириешки", price: "200 ₽", category: "beer_snacks", image: IMG_BEER_SNACKS, weight: "100 г" },
+  { id: 82, name: "Рыба", price: "400 ₽", category: "beer_snacks", image: IMG_BEER_SNACKS, weight: "100 г" },
+  { id: 83, name: "Кальмар", price: "400 ₽", category: "beer_snacks", image: IMG_BEER_SNACKS, weight: "100 г" },
+  { id: 84, name: "Сыр (косичка)", price: "400 ₽", category: "beer_snacks", image: IMG_BEER_SNACKS, weight: "100 г" },
+  { id: 85, name: "Сыр (хворост)", price: "400 ₽", category: "beer_snacks", image: IMG_BEER_SNACKS, weight: "100 г" },
+  { id: 86, name: "Пивная тарелка", price: "1 500 ₽", category: "beer_snacks", image: IMG_BEER_SNACKS, weight: "500 г" },
 
   // Пиво
-  { id: 90, name: "Безалкогольное пиво", price: "220 ₽", category: "beer", image: DRINK_IMG },
-  { id: 91, name: "Tuborg", price: "250 ₽", category: "beer", image: DRINK_IMG },
-  { id: 92, name: "Жатецкий гусь", price: "250 ₽", category: "beer", image: DRINK_IMG },
-  { id: 93, name: "Чешское", price: "250 ₽", category: "beer", image: DRINK_IMG },
-  { id: 94, name: "Немецкое", price: "250 ₽", category: "beer", image: DRINK_IMG },
-  { id: 95, name: "Weiss Berg", price: "250 ₽", category: "beer", image: DRINK_IMG },
-  { id: 96, name: "Kozel (тёмный / светлый)", price: "250 ₽", category: "beer", image: DRINK_IMG },
-  { id: 97, name: "Beaver", price: "250 ₽", category: "beer", image: DRINK_IMG },
-  { id: 98, name: "Чешское разливное", price: "250 ₽", category: "beer", image: DRINK_IMG },
-  { id: 99, name: "Немецкое разливное", price: "250 ₽", category: "beer", image: DRINK_IMG },
+  { id: 90, name: "Безалкогольное пиво", price: "220 ₽", category: "beer", image: IMG_BEER },
+  { id: 91, name: "Tuborg", price: "250 ₽", category: "beer", image: IMG_BEER },
+  { id: 92, name: "Жатецкий гусь", price: "250 ₽", category: "beer", image: IMG_BEER },
+  { id: 93, name: "Чешское", price: "250 ₽", category: "beer", image: IMG_BEER },
+  { id: 94, name: "Немецкое", price: "250 ₽", category: "beer", image: IMG_BEER },
+  { id: 95, name: "Weiss Berg", price: "250 ₽", category: "beer", image: IMG_BEER },
+  { id: 96, name: "Kozel (тёмный / светлый)", price: "250 ₽", category: "beer", image: IMG_BEER },
+  { id: 97, name: "Beaver", price: "250 ₽", category: "beer", image: IMG_BEER },
+  { id: 98, name: "Чешское разливное", price: "250 ₽", category: "beer", image: IMG_BEER },
+  { id: 99, name: "Немецкое разливное", price: "250 ₽", category: "beer", image: IMG_BEER },
 
   // Безалкогольные напитки
-  { id: 100, name: "Сок", price: "100 / 300 ₽", category: "soft", image: DRINK_IMG, weight: "стакан / литр" },
-  { id: 101, name: "Red Bull", price: "250 ₽", category: "soft", image: DRINK_IMG },
-  { id: 102, name: "Adrenalin", price: "250 ₽", category: "soft", image: DRINK_IMG },
-  { id: 103, name: "XELL", price: "200 ₽", category: "soft", image: DRINK_IMG },
-  { id: 104, name: "Coca-Cola", price: "200 / 250 ₽", category: "soft", image: DRINK_IMG, weight: "пластик / стекло" },
-  { id: 105, name: "Лимонад", price: "200 ₽", category: "soft", image: DRINK_IMG },
-  { id: 106, name: "Вода", price: "100 ₽", category: "soft", image: DRINK_IMG },
-  { id: 107, name: "Завьяловская", price: "200 ₽", category: "soft", image: DRINK_IMG },
-  { id: 108, name: "Ессентуки", price: "200 ₽", category: "soft", image: DRINK_IMG },
-  { id: 109, name: "Кружка чая", price: "80 / 100 ₽", category: "soft", image: DRINK_IMG },
-  { id: 110, name: "Чайник чая", price: "250 / 300 / 350 / 400 ₽", category: "soft", image: DRINK_IMG },
+  { id: 100, name: "Сок", price: "100 / 300 ₽", category: "soft", image: IMG_SOFT, weight: "стакан / литр" },
+  { id: 101, name: "Red Bull", price: "250 ₽", category: "soft", image: IMG_SOFT },
+  { id: 102, name: "Adrenalin", price: "250 ₽", category: "soft", image: IMG_SOFT },
+  { id: 103, name: "XELL", price: "200 ₽", category: "soft", image: IMG_SOFT },
+  { id: 104, name: "Coca-Cola", price: "200 / 250 ₽", category: "soft", image: IMG_SOFT, weight: "пластик / стекло" },
+  { id: 105, name: "Лимонад", price: "200 ₽", category: "soft", image: IMG_SOFT },
+  { id: 106, name: "Вода", price: "100 ₽", category: "soft", image: IMG_SOFT },
+  { id: 107, name: "Завьяловская", price: "200 ₽", category: "soft", image: IMG_SOFT },
+  { id: 108, name: "Ессентуки", price: "200 ₽", category: "soft", image: IMG_SOFT },
+  { id: 109, name: "Кружка чая", price: "80 / 100 ₽", category: "soft", image: IMG_SOFT },
+  { id: 110, name: "Чайник чая", price: "250 / 300 / 350 / 400 ₽", category: "soft", image: IMG_SOFT },
 
   // Кофе
-  { id: 120, name: "Кофе растворимый", price: "80 ₽", category: "coffee", image: DRINK_IMG },
-  { id: 121, name: "Американо", price: "150 ₽", category: "coffee", image: DRINK_IMG },
-  { id: 122, name: "Капучино", price: "180 ₽", category: "coffee", image: DRINK_IMG },
+  { id: 120, name: "Кофе растворимый", price: "80 ₽", category: "coffee", image: IMG_COFFEE },
+  { id: 121, name: "Американо", price: "150 ₽", category: "coffee", image: IMG_COFFEE },
+  { id: 122, name: "Капучино", price: "180 ₽", category: "coffee", image: IMG_COFFEE },
 ];
 
 const categories: { id: Category; label: string }[] = [
