@@ -182,6 +182,9 @@ export default function Index() {
             <p className="text-xs tracking-wider text-muted-foreground mt-2">
               ТЦ «Южный»
             </p>
+            <p className="text-xs tracking-wider text-muted-foreground">
+              Ежедневно 14:00 — 02:00
+            </p>
             <a
               href="tel:89195331636"
               className="text-xs tracking-wider text-foreground hover:text-muted-foreground transition-colors"
