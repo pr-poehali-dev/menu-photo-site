@@ -66,7 +66,8 @@ export default {
 			},
 			fontFamily: {
 				'cormorant': ['Cormorant Garamond', 'serif'],
-				'montserrat': ['Montserrat', 'sans-serif'],
+				'montserrat': ['Oswald', 'sans-serif'],
+				sans: ['Oswald', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
