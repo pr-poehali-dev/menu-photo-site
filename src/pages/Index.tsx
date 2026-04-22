@@ -39,8 +39,8 @@ interface Dish {
 
 const dishes: Dish[] = [
   // Салаты
-  { id: 1, name: "Оливье", price: "250 ₽", category: "salads", image: IMG_SALAD },
-  { id: 2, name: "Винегрет", price: "250 ₽", category: "salads", image: IMG_SALAD },
+  { id: 1, name: "Оливье", price: "250 ₽", category: "salads", image: IMG_SALAD, weight: "250 г" },
+  { id: 2, name: "Винегрет", price: "250 ₽", category: "salads", image: IMG_SALAD, weight: "250 г" },
 
   // Вторые блюда
   { id: 10, name: "Мясо по-французски", price: "350 / 500 ₽", category: "mains", image: IMG_MAINS },
@@ -54,10 +54,10 @@ const dishes: Dish[] = [
   { id: 22, name: "Люля-кебаб", price: "550 ₽", category: "bbq", image: IMG_BBQ },
 
   // Бутерброды
-  { id: 30, name: "С ветчиной", price: "200 ₽ / шт", category: "sandwiches", image: IMG_SANDWICH },
-  { id: 31, name: "С колбасой", price: "200 ₽ / шт", category: "sandwiches", image: IMG_SANDWICH },
-  { id: 32, name: "Соус сырный", price: "100 ₽ / шт", category: "sandwiches", image: IMG_SANDWICH },
-  { id: 33, name: "Соус чесночный", price: "100 ₽ / шт", category: "sandwiches", image: IMG_SANDWICH },
+  { id: 30, name: "С ветчиной", price: "200 ₽", category: "sandwiches", image: IMG_SANDWICH, weight: "1 шт" },
+  { id: 31, name: "С колбасой", price: "200 ₽", category: "sandwiches", image: IMG_SANDWICH, weight: "1 шт" },
+  { id: 32, name: "Соус сырный", price: "100 ₽", category: "sandwiches", image: IMG_SANDWICH, weight: "1 шт" },
+  { id: 33, name: "Соус чесночный", price: "100 ₽", category: "sandwiches", image: IMG_SANDWICH, weight: "1 шт" },
 
   // Гарниры
   { id: 40, name: "Картофель фри", price: "250 ₽", category: "sides", image: IMG_SIDES, weight: "150 г" },
