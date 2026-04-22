@@ -241,10 +241,10 @@ export default function Index() {
               {/* Content */}
               <div className="p-5">
                 <div className="flex items-start justify-between gap-4">
-                  <h2 className="font-cormorant text-2xl font-light leading-tight text-foreground">
+                  <h2 className="font-montserrat text-xl font-semibold leading-tight text-foreground">
                     {dish.name}
                   </h2>
-                  <span className="font-cormorant text-xl font-light text-foreground whitespace-nowrap">
+                  <span className="font-montserrat text-lg font-semibold text-foreground whitespace-nowrap">
                     {dish.price}
                   </span>
                 </div>
