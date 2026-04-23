@@ -49,8 +49,8 @@ const dishes: Dish[] = [
   { id: 13, name: "Колбаски", price: "300 ₽", category: "mains", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/d0c139d6-06a2-4420-a3e0-27bb822c6ccb.jpg" },
 
   // Шашлык
-  { id: 20, name: "Свинина", price: "450 ₽", category: "bbq", image: IMG_BBQ },
-  { id: 21, name: "Крылышки", price: "400 ₽", category: "bbq", image: IMG_BBQ },
+  { id: 20, name: "Свинина", price: "450 ₽", category: "bbq", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/70caa845-de8d-4644-899c-024135630298.png" },
+  { id: 21, name: "Крылышки", price: "400 ₽", category: "bbq", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/855a5bfc-c7c9-446d-a351-b1bd91124349.jpg" },
   { id: 22, name: "Люля-кебаб", price: "550 ₽", category: "bbq", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/51780e7a-019c-4f24-b4f8-b2ae26420251.png" },
 
   // Бутерброды
@@ -61,12 +61,12 @@ const dishes: Dish[] = [
 
   // Гарниры
   { id: 40, name: "Картофель фри", price: "250 ₽", category: "sides", image: IMG_SIDES, weight: "150 г" },
-  { id: 41, name: "Фри в шарах", price: "300 ₽", category: "sides", image: IMG_SIDES, weight: "150 г" },
+  { id: 41, name: "Фри в шарах", price: "300 ₽", category: "sides", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/2b02b4ae-a8ec-4bf3-890c-a296f5da5a35.jpg", weight: "150 г" },
 
   // Холодные закуски
   { id: 50, name: "Мясное ассорти", price: "450 ₽", category: "cold", image: IMG_COLD },
-  { id: 51, name: "Овощное ассорти", price: "350 ₽", category: "cold", image: IMG_COLD },
-  { id: 52, name: "Разносолы", price: "350 ₽", category: "cold", image: IMG_COLD },
+  { id: 51, name: "Овощное ассорти", price: "350 ₽", category: "cold", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/8db4a68b-cc20-4034-9130-6df2b450eb24.jpg" },
+  { id: 52, name: "Разносолы", price: "350 ₽", category: "cold", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/afc66afa-1ce8-4d07-807c-a50706cdd419.jpg" },
   { id: 53, name: "Капуста «Сибирская»", price: "250 ₽", category: "cold", image: IMG_COLD },
   { id: 54, name: "Лимон (нарезка)", price: "100 ₽", category: "cold", image: IMG_COLD },
   { id: 55, name: "Сельдь с отварным картофелем", price: "400 ₽", category: "cold", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/1d6644ae-066b-4cf9-8f17-7f3e1fa8ceae.jpg" },
