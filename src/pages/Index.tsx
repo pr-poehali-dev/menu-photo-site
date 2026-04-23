@@ -43,7 +43,7 @@ const dishes: Dish[] = [
   { id: 2, name: "Винегрет", price: "250 ₽", category: "salads", image: IMG_SALAD, weight: "250 г" },
 
   // Вторые блюда
-  { id: 10, name: "Мясо по-французски", price: "350 / 500 ₽", category: "mains", image: IMG_MAINS },
+  { id: 10, name: "Мясо по-французски", price: "350 / 500 ₽", category: "mains", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/83a7aba9-051d-4dc2-89f5-0ecd4bc9f905.jpg" },
   { id: 11, name: "Пельмени с бульоном", price: "250 ₽", category: "mains", image: IMG_MAINS },
   { id: 12, name: "Пельмени", price: "200 ₽", category: "mains", image: IMG_MAINS },
   { id: 13, name: "Колбаски", price: "300 ₽", category: "mains", image: IMG_MAINS },
@@ -69,7 +69,7 @@ const dishes: Dish[] = [
   { id: 52, name: "Разносолы", price: "350 ₽", category: "cold", image: IMG_COLD },
   { id: 53, name: "Капуста «Сибирская»", price: "250 ₽", category: "cold", image: IMG_COLD },
   { id: 54, name: "Лимон (нарезка)", price: "100 ₽", category: "cold", image: IMG_COLD },
-  { id: 55, name: "Сельдь с отварным картофелем", price: "400 ₽", category: "cold", image: IMG_COLD },
+  { id: 55, name: "Сельдь с отварным картофелем", price: "400 ₽", category: "cold", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/1d6644ae-066b-4cf9-8f17-7f3e1fa8ceae.jpg" },
 
   // Десерты
   { id: 60, name: "Яблоко", price: "100 ₽", category: "desserts", image: IMG_DESSERT, weight: "100 г" },
