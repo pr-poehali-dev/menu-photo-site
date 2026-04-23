@@ -39,19 +39,19 @@ interface Dish {
 
 const dishes: Dish[] = [
   // Салаты
-  { id: 1, name: "Оливье", price: "250 ₽", category: "salads", image: IMG_SALAD, weight: "250 г" },
+  { id: 1, name: "Оливье", price: "250 ₽", category: "salads", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/26e482d5-ca81-4609-8f1f-b841d01b9b86.jpg", weight: "250 г" },
   { id: 2, name: "Винегрет", price: "250 ₽", category: "salads", image: IMG_SALAD, weight: "250 г" },
 
   // Вторые блюда
   { id: 10, name: "Мясо по-французски", price: "350 / 500 ₽", category: "mains", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/83a7aba9-051d-4dc2-89f5-0ecd4bc9f905.jpg" },
-  { id: 11, name: "Пельмени с бульоном", price: "250 ₽", category: "mains", image: IMG_MAINS },
-  { id: 12, name: "Пельмени", price: "200 ₽", category: "mains", image: IMG_MAINS },
-  { id: 13, name: "Колбаски", price: "300 ₽", category: "mains", image: IMG_MAINS },
+  { id: 11, name: "Пельмени с бульоном", price: "250 ₽", category: "mains", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/2892d5d7-d32f-4c1b-8f20-0e532195650a.jpg" },
+  { id: 12, name: "Пельмени", price: "200 ₽", category: "mains", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/02875ecc-ade3-4050-a098-30c6816d5aff.jpg" },
+  { id: 13, name: "Колбаски", price: "300 ₽", category: "mains", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/d0c139d6-06a2-4420-a3e0-27bb822c6ccb.jpg" },
 
   // Шашлык
   { id: 20, name: "Свинина", price: "450 ₽", category: "bbq", image: IMG_BBQ },
   { id: 21, name: "Крылышки", price: "400 ₽", category: "bbq", image: IMG_BBQ },
-  { id: 22, name: "Люля-кебаб", price: "550 ₽", category: "bbq", image: IMG_BBQ },
+  { id: 22, name: "Люля-кебаб", price: "550 ₽", category: "bbq", image: "https://cdn.poehali.dev/projects/0c93552c-5b9e-4577-82c3-1e21c96c1712/bucket/51780e7a-019c-4f24-b4f8-b2ae26420251.png" },
 
   // Бутерброды
   { id: 30, name: "С ветчиной", price: "200 ₽", category: "sandwiches", image: IMG_SANDWICH, weight: "1 шт" },
